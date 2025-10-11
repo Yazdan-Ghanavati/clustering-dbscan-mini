@@ -32,6 +32,9 @@ Each concept is implemented in a single Jupyter Notebook (`DBSCAN_mini_series.ip
 
 ## 🧩 Results & Reflection  
 
+
+### 1️⃣ Why Clustering?  
+
 The first part of this project focuses on a simple but fundamental question:  
 **why do we cluster data?**
 
