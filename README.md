@@ -28,18 +28,33 @@ Each concept is implemented in a single Jupyter Notebook (`DBSCAN_mini_series.ip
 | 6 | Tuning ε & MinPts | ⬜ | Finding the right parameters |
 | 7 | DBSCAN vs K-Means | ⬜ | Comparing both approaches and summarizing insights |
 
----
+----
 
-## 📊 Current Figures  
+## 🧩 Results & Reflection  
 
-### 🧩 1️⃣ Why Clustering?  
-Before labeling, data often looks random — but clustering reveals hidden structure.  
-Left: unlabeled data; Right: clusters formed by pattern discovery.
+The first part of this project focuses on a simple but fundamental question:  
+**why do we cluster data?**
+
+Clustering is the process of grouping similar data points when no labels are provided —  
+it helps us reveal hidden structure and meaning inside complex datasets.  
+
+To visualize this idea, I generated a random dataset with four hidden groups.  
+Below, the **left plot** shows how the raw, unlabeled data initially looks like random noise.  
+The **right plot**, after applying a simple clustering algorithm, reveals the underlying groups —  
+showing how unsupervised learning can transform chaos into insight.  
 
 <p align="center">
   <img src="imgs/why_clustering.png" width="700">
 </p>
 
+This simple example demonstrates the beauty of clustering:  
+without knowing any labels, we can still discover meaningful organization in the data.  
+That’s the foundation of many modern applications —  
+from customer segmentation and image recognition to medical pattern discovery.  
+
+In the next stage, we’ll dive deeper into **K-Means**,  
+understanding exactly *how* it finds these clusters, and *why* it sometimes fails —  
+paving the way toward more flexible methods like **DBSCAN**.
 
 ---
 
