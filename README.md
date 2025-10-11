@@ -2,7 +2,7 @@
 
 **Author:** Yazdan Ghanavati  
 📍 Master's Student, ICT for Internet and Multimedia — University of Padova  
-🔗 [LinkedIn](https://linkedin.com/in/yazdanghanavati) • 💻 [GitHub](https://github.com/<your-username>)  
+🔗 [LinkedIn](https://linkedin.com/in/yazdanghanavati) • 💻 [GitHub](https://github.com/<Yazdan-Ghanavati>)  
 
 ---
 
