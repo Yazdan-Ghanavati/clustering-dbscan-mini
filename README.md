@@ -92,7 +92,7 @@ In the previous section, we used scikit-learn’s `KMeans` for a quick demo.
 Here, we implemented it manually to visualize the inner workings — initialization, assignment, and centroid updates —  
 which aren’t visible when using the library version. This deeper look shows *how* K-Means actually converges.  
 
-In the next post, we’ll explore when K-Means fails and why density-based algorithms like **DBSCAN** handle complex shapes and noise more effectively.  
+In the next part, we’ll explore when K-Means fails and why density-based algorithms like **DBSCAN** handle complex shapes and noise more effectively.  
 
 ---
 
