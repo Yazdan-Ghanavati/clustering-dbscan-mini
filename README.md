@@ -21,7 +21,7 @@ Each concept is implemented in a single Jupyter Notebook (`DBSCAN_mini_series.ip
 | # | Section | Status | Focus |
 |---|----------|--------|--------|
 | 1 | Why Clustering? | ✅ | Understanding why we group unlabeled data |
-| 2 | K-Means Basics | ⬜ | How K-Means forms clusters iteratively |
+| 2 | K-Means Basics | ✅ | How K-Means forms clusters iteratively |
 | 3 | K-Means Failures | ⬜ | Why K-Means struggles on complex data |
 | 4 | DBSCAN Intuition | ⬜ | Core, border, and noise points visually explained |
 | 5 | Cluster Expansion | ⬜ | How DBSCAN grows clusters from dense regions |
