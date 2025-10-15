@@ -61,6 +61,41 @@ paving the way toward more flexible methods like **DBSCAN**.
 
 ---
 
+### 2️⃣ K-Means Basics  
+
+Now that we know *why* clustering matters, let’s look at one of the simplest yet most influential algorithms — **K-Means**.  
+
+K-Means groups data by minimizing the distance between each point and its assigned cluster centroid. The “K” simply refers to the **number of clusters (or centroids)** you choose.  
+
+Here’s what happens step by step:  
+1. 🎲 **Random Initialization:** K random centroids are placed in the dataset.  
+2. 🎯 **Assignment Step:** Each point is assigned to the closest centroid.  
+3. 🔁 **Update Step:** Each centroid moves to the average position of its assigned points.  
+4. The process repeats until centroids stop moving — *that’s convergence*.  
+
+The GIF below demonstrates this process visually. You can see random initialization, cluster assignment, and centroid movement until stability.  
+
+<p align="center">
+  <img src="imgs/kmeans_process.gif" width="700">
+</p>
+
+And here’s the final result after convergence 👇  
+
+<p align="center">
+  <img src="imgs/kmeans_final.png" width="700">
+</p>
+
+Even though K-Means often finds meaningful patterns, it relies heavily on **the initial random placement** of centroids — sometimes leading to suboptimal clustering.  
+
+📘 *P.S.*  
+In the previous section, we used scikit-learn’s `KMeans` for a quick demo.  
+Here, we implemented it manually to visualize the inner workings — initialization, assignment, and centroid updates —  
+which aren’t visible when using the library version. This deeper look shows *how* K-Means actually converges.  
+
+In the next post, we’ll explore when K-Means fails and why density-based algorithms like **DBSCAN** handle complex shapes and noise more effectively.  
+
+---
+
 ## ⚙️ How to Run  
 
 1. **Clone the repository**  
