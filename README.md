@@ -95,6 +95,32 @@ which aren’t visible when using the library version. This deeper look shows *h
 In the next part, we’ll explore when K-Means fails and why density-based algorithms like **DBSCAN** handle complex shapes and noise more effectively.  
 
 ---
+---
+
+### 3️⃣ When K-Means Fails  
+
+While K-Means is simple and intuitive, it assumes that clusters are **spherical**, of **equal size**, and **uniform density**.  
+When those assumptions break, so does K-Means.
+
+In this section, we visualized three classic failure cases:
+
+- **Non-spherical shapes:** linear boundaries cut through curved clusters (e.g., “two moons”).  
+- **Varying density:** sparse clusters get absorbed or split by denser ones.  
+- **Noise/outliers:** centroids are pulled toward random points, sometimes forming fake clusters.
+
+This comparison highlights that K-Means doesn’t “understand” data distribution — it only minimizes distance to centroids.  
+In the next stage, we’ll meet **DBSCAN**, which overcomes these limitations by clustering based on *density* and identifying *noise* naturally.
+
+<p align="center">
+  <img src="imgs/kmeans_failures_pairs.png" width="800">
+</p>
+
+---
+
+
+
+
+
 
 ## ⚙️ How to Run  
 
