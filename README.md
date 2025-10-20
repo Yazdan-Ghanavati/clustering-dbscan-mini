@@ -59,8 +59,6 @@ In the next stage, we’ll dive deeper into **K-Means**,
 understanding exactly *how* it finds these clusters, and *why* it sometimes fails —  
 paving the way toward more flexible methods like **DBSCAN**.
 
----
-
 ### 2️⃣ K-Means Basics  
 
 Now that we know *why* clustering matters, let’s look at one of the simplest yet most influential algorithms — **K-Means**.  
@@ -94,7 +92,6 @@ which aren’t visible when using the library version. This deeper look shows *h
 
 In the next part, we’ll explore when K-Means fails and why density-based algorithms like **DBSCAN** handle complex shapes and noise more effectively.  
 
----
 ---
 
 ### 3️⃣ When K-Means Fails  
