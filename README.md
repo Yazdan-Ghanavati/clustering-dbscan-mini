@@ -77,11 +77,6 @@ The GIF below demonstrates this process visually. You can see random initializat
   <img src="imgs/kmeans_process.gif" width="700">
 </p>
 
-And here’s the final result after convergence 👇  
-
-<p align="center">
-  <img src="imgs/kmeans_final.png" width="700">
-</p>
 
 Even though K-Means often finds meaningful patterns, it relies heavily on **the initial random placement** of centroids — sometimes leading to suboptimal clustering.  
 
