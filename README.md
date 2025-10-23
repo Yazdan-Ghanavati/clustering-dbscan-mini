@@ -23,7 +23,7 @@ Each concept is implemented in a single Jupyter Notebook (`DBSCAN_mini_series.ip
 | 1 | Why Clustering? | ✅ | Understanding why we group unlabeled data |
 | 2 | K-Means Basics | ✅ | How K-Means forms clusters iteratively |
 | 3 | K-Means Failures | ✅ | Why K-Means struggles on complex data |
-| 4 | DBSCAN Intuition | ⬜ | Core, border, and noise points visually explained |
+| 4 | DBSCAN Intuition | ✅ | Core, border, and noise points visually explained |
 | 5 | Cluster Expansion | ⬜ | How DBSCAN grows clusters from dense regions |
 | 6 | Tuning ε & MinPts | ⬜ | Finding the right parameters |
 | 7 | DBSCAN vs K-Means | ⬜ | Comparing both approaches and summarizing insights |
@@ -109,6 +109,31 @@ In the next stage, we’ll meet **DBSCAN**, which overcomes these limitations by
 
 ---
 
+### 4️⃣ DBSCAN Intuition — Core, Border & Noise Points  
+
+After examining K-Means limitations, we now move toward **density-based clustering**,  
+where the goal is to identify regions of high data concentration rather than relying on distance to fixed centroids.  
+
+DBSCAN (**D**ensity-**B**ased **S**patial **C**lustering of **A**pplications with **N**oise) introduces an elegant way of thinking about structure in data through three key concepts:  
+
+- 🟢 **Core points** — points that have at least a minimum number of neighbors (MinPts) within a given radius (ε). They form the dense “heart” of each cluster.  
+- 🟡 **Border points** — points that lie close to a dense region but do not have enough neighbors to be cores themselves.  
+- ⚪ **Noise points** — points that are too isolated to belong to any cluster.  
+
+<p align="center">
+  <img src="imgs/dbscan_core_border_noise.png" width="650">
+</p>
+
+This visualization shows how DBSCAN evaluates data density:  
+core points (green) form the central structure of each cluster,  
+border points (yellow) connect peripheral areas,  
+and noise points (gray) are naturally excluded.  
+
+Unlike K-Means, DBSCAN does **not require specifying the number of clusters in advance**,  
+and it can handle clusters of **arbitrary shape, size, and density** while being robust to noise.  
+
+The parameters ε (epsilon) and MinPts define what the algorithm considers “dense,”  
+making DBSCAN one of the most intuitive and adaptable clustering methods.
 
 
 
