@@ -87,7 +87,6 @@ which aren’t visible when using the library version. This deeper look shows *h
 
 In the next part, we’ll explore when K-Means fails and why density-based algorithms like **DBSCAN** handle complex shapes and noise more effectively.  
 
----
 
 ### 3️⃣ When K-Means Fails  
 
@@ -107,7 +106,6 @@ In the next stage, we’ll meet **DBSCAN**, which overcomes these limitations by
   <img src="imgs/kmeans_failures_pairs.png" width="800">
 </p>
 
----
 
 ### 4️⃣ DBSCAN Intuition — Core, Border & Noise Points  
 
@@ -136,6 +134,7 @@ The parameters ε (epsilon) and MinPts define what the algorithm considers “de
 making DBSCAN one of the most intuitive and adaptable clustering methods.
 
 
+---
 
 
 
