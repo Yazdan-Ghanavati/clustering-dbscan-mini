@@ -134,6 +134,35 @@ The parameters ε (epsilon) and MinPts define what the algorithm considers “de
 making DBSCAN one of the most intuitive and adaptable clustering methods.
 
 
+
+### 5️⃣ Tuning DBSCAN — Understanding ε (Epsilon) and MinPts  
+
+Once we understand how DBSCAN defines *core*, *border*, and *noise* points,  
+the next question is: **how do we tune its parameters to extract the right clusters?**  
+
+DBSCAN’s behavior depends mainly on two values:  
+- **ε (Epsilon):** defines the radius around each point — the neighborhood size  
+- **MinPts:** defines the minimum number of neighbors required to form a dense region  
+
+These two parameters control how “strict” DBSCAN is about what counts as a cluster.  
+
+- When **ε** is too small → clusters fragment, and many points turn into *noise*.  
+- When **ε** is too large → distinct clusters merge into one big group.  
+- Increasing **MinPts** makes DBSCAN more conservative, treating fewer regions as dense.  
+
+<p align="center">
+  <img src="imgs/dbscan_tuning.png" width="800">
+</p>
+
+In the figure above, each cell shows how changing ε and MinPts affects clustering behavior.  
+The top row (MinPts = 3) produces more clusters and fewer noisy points,  
+while the bottom row (MinPts = 8) is stricter — more selective, producing fewer clusters but more noise.  
+
+Finding the “sweet spot” is not about trial and error — it’s about *understanding your data’s scale and density*.  
+A well-chosen ε and MinPts combination lets DBSCAN reveal organic, nonlinear shapes  
+that fixed-boundary algorithms like K-Means could never properly capture.
+
+
 ---
 
 
