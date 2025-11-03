@@ -164,25 +164,44 @@ that fixed-boundary algorithms like K-Means could never properly capture.
 
 
 
-
 ### 6️⃣ K-Means vs DBSCAN — Same Data, Two Different Stories
 
-This comparison highlights how **assumptions** shape clustering:
+By now, we’ve seen how DBSCAN works and how its parameters define density.  
+Now we compare it directly with **K-Means** to understand how assumptions change results.
 
-- **K-Means** assumes spherical, similarly sized clusters and that *every* point must belong to a cluster.
-- **DBSCAN** connects **dense regions**, allows **arbitrary shapes**, and labels isolated points as **noise**.
+|  | **K-Means** | **DBSCAN** |
+|---|------------|------------|
+| 🧠 **Core idea** | Minimizes distance to fixed centroids | Groups points by density connectivity |
+| ⚙️ **Input needed** | Must choose *k* (number of clusters) | No need for *k* — finds clusters automatically |
+| 📐 **Cluster shape** | Prefers spherical, equal-size clusters | Handles any shape or size |
+| 🚫 **Noise handling** | Forced into a cluster | Can be labeled as noise (*-1*) |
 
-| Case | K-Means | DBSCAN |
-|---|---|---|
-| 🌓 **Interlocking Moons** | Cuts curves with linear/convex boundaries | Follows the true crescent shapes |
-| 🎯 **Concentric Circles** | Forces a straight split across rings | Preserves circular structure naturally |
-| 🌪 **Blobs + Noise** | Assigns noise to nearest cluster | Marks outliers as *noise (–1)* instead of forcing them |
+---
+
+#### 📊 Visual Comparison (Moons, Circles, Noise)
 
 <p align="center">
   <img src="imgs/kmeans_vs_dbscan.png" width="900">
 </p>
 
-**Key takeaway:** K-Means minimizes distance to centroids; DBSCAN discovers **density-connected structure** and can ignore noise. Choose the tool that matches your data’s geometry and contamination level.
+| Dataset | K-Means Result | DBSCAN Result |
+|---------|-----------------|---------------|
+| 🌓 **Two Moons** | Cuts curved shapes with straight boundaries | Follows the natural crescent shapes |
+| 🎯 **Concentric Circles** | Splits circular patterns incorrectly | Preserves ring structure perfectly |
+| 🌪 **Blobs + Noise** | Assigns outliers to nearest cluster | Labels outliers as **noise** instead of forcing them |
+
+---
+
+### ✅ Key Takeaway
+
+K-Means tries to **fit data into a predefined shape**.  
+DBSCAN **lets the data define its own shape**.
+
+- If clusters are clean, round and well-separated → K-Means is fast and effective.  
+- If clusters are messy, non-linear, or noisy → DBSCAN sees what K-Means cannot.
+
+This is the moment where clustering evolves from  
+**“distance to a centroid” → “density and structure in data.”**
 
 
 
