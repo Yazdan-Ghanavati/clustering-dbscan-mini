@@ -163,6 +163,29 @@ A well-chosen ε and MinPts combination lets DBSCAN reveal organic, nonlinear sh
 that fixed-boundary algorithms like K-Means could never properly capture.
 
 
+
+
+### 6️⃣ K-Means vs DBSCAN — Same Data, Two Different Stories
+
+This comparison highlights how **assumptions** shape clustering:
+
+- **K-Means** assumes spherical, similarly sized clusters and that *every* point must belong to a cluster.
+- **DBSCAN** connects **dense regions**, allows **arbitrary shapes**, and labels isolated points as **noise**.
+
+| Case | K-Means | DBSCAN |
+|---|---|---|
+| 🌓 **Interlocking Moons** | Cuts curves with linear/convex boundaries | Follows the true crescent shapes |
+| 🎯 **Concentric Circles** | Forces a straight split across rings | Preserves circular structure naturally |
+| 🌪 **Blobs + Noise** | Assigns noise to nearest cluster | Marks outliers as *noise (–1)* instead of forcing them |
+
+<p align="center">
+  <img src="imgs/kmeans_vs_dbscan.png" width="900">
+</p>
+
+**Key takeaway:** K-Means minimizes distance to centroids; DBSCAN discovers **density-connected structure** and can ignore noise. Choose the tool that matches your data’s geometry and contamination level.
+
+
+
 ---
 
 
