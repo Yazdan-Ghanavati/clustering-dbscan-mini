@@ -25,7 +25,7 @@ Each concept is implemented in a single Jupyter Notebook (`DBSCAN_mini_series.ip
 | 3 | K-Means Failures | ✅ | Why K-Means struggles on complex or uneven data |
 | 4 | DBSCAN Intuition | ✅ | Core, border, and noise points explained visually |
 | 5 | Tuning ε & minPts | ✅ | Finding the right parameters and understanding their effects |
-| 6 | DBSCAN vs K-Means | ⬜ | Comparing both approaches and summarizing insights |
+| 6 | DBSCAN vs K-Means | ✅ | Comparing both approaches and summarizing insights |
 | 7 | wrap-up + key takeaways | ⬜ | summarizing the journey from K-Means to DBSCAN |
 
 ----
