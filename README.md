@@ -212,7 +212,6 @@ This mini-series was designed to answer a simple question:
 
 Across seven steps, we moved from the motivation behind clustering to a full comparison between distance-based and density-based approaches, using visuals, code, reflections, and real GitHub documentation.
 
----
 
 #### 🔹 Main Lessons
 
